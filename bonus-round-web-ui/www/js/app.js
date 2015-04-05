@@ -77,12 +77,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.leaderboard', {
-    url: '/leaderboard',
+  .state('tab.games', {
+    url: '/games',
     views: {
-      'tab-leaderboard': {
-        templateUrl: 'templates/tab-leaderboard.html',
-        controller: 'LeaderboardCtrl'
+      'tab-games': {
+        templateUrl: 'templates/tab-games.html',
+        controller: 'GamesCtrl'
       }
     }
   });

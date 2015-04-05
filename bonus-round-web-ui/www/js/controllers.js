@@ -4,10 +4,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('LeaderboardCtrl', function($scope) {
-
+.controller('GamesCtrl', function($scope, Games) {
+	Games.getComingSoon().then(function (gamesList) {
+		$scope.comingSoon = gamesList;
+	});
 })
 
 .controller('TabCtrl', function($scope) {
-	
+
 });
