@@ -6,14 +6,12 @@
   		</div>
   	</div> -->
 
-  	<div class="list">
-		<div class="item item-divider">
-			Coming Soon
-		</div>
+  	<div class="games-list list list-inset" ng-repeat="section in games" ng-if="section.gamesList.length">
+		<div class="item item-divider" ng-bind="section.type"></div>
 
-		<a class="item" ng-class="{ 'item-thumbnail-left': game.img }" ng-repeat="game in comingSoon">
+		<a class="item game" ng-class="{ 'item-thumbnail-left': game.img }" ng-repeat="game in section.gamesList">
 			<img ng-if="game.img" ng-attr-src="{{ baseUrl }}/img/games/{{ game.img }}" />
-			<h2 ng-bind="game.name"></h2>
+			<span ng-bind="game.name"></span>
 		</a>
   	</div>
   </ion-content>

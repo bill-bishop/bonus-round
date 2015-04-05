@@ -1,17 +1,20 @@
 {
-	"current": {
-		"gamesList": []
-	},
-
-	"comingSoon": {
-		"gamesList": [
-			{
-				"name": "Pac-Man",
-				"img": "pacman.png"
-			},
-			{
-				"name": "Galaga"
-			}
-		]
-	}
+	"games": [
+		{
+			"type": "Arcade",
+			"gamesList": []
+		},
+		{
+			"type": "Coming Soon",
+			"gamesList": [
+				{
+					"name": "Pac-Man",
+					"img": "pacman.png"
+				},
+				{
+					"name": "Galaga"
+				}
+			]
+		}
+	]
 }

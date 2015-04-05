@@ -6,8 +6,8 @@ angular.module('starter.controllers', [])
 
 .controller('GamesCtrl', function($scope, Games, BASE_URL) {
 	$scope.baseUrl = BASE_URL;
-	Games.getComingSoon().then(function (gamesList) {
-		$scope.comingSoon = gamesList;
+	Games.getGames().then(function (games) {
+		$scope.games = games;
 	});
 })
 
