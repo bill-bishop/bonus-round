@@ -1,0 +1,29 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-positive" ng-controller="TabCtrl">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="Home" icon-off="ion-beer" icon-on="ion-ios-game-controller-a" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Get Social" icon-off="ion-thumbsup" icon-on="ion-thumbsup" href="#/tab/social">
+    <ion-nav-view name="tab-social"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="About" icon-off="ion-ios-help-outline" icon-on="ion-ios-help" href="#/tab/about">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+  <!-- High Scores Tab -->
+  <ion-tab title="High Scores" icon-off="ion-trophy" icon-on="ion-trophy" href="#/tab/leaderboard">
+    <ion-nav-view name="tab-leaderboard"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
