@@ -12,7 +12,7 @@
 		</div>
 
 		<a class="item" ng-class="{ 'item-thumbnail-left': game.img }" ng-repeat="game in comingSoon">
-			<img ng-if="game.img" ng-attr-src="/img/games/{{ game.img }}" />
+			<img ng-if="game.img" ng-attr-src="{{ baseUrl }}/img/games/{{ game.img }}" />
 			<h2 ng-bind="game.name"></h2>
 		</a>
   	</div>
