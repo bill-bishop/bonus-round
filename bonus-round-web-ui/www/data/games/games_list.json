@@ -1,0 +1,17 @@
+{
+	"current": {
+		"gamesList": []
+	},
+
+	"comingSoon": {
+		"gamesList": [
+			{
+				"name": "Pac-Man",
+				"img": "pacman.png"
+			},
+			{
+				"name": "Galaga"
+			}
+		]
+	}
+}
