@@ -1,16 +1,14 @@
 <ion-view view-title="Social">
   <ion-content>
-    <ion-list ng-show="settings.enableFriends">
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
+    <div class="list card">
+      <div ng-repeat="site in socialSites" ng-href="{{ site.url }}" 
+      class="item item-icon-left item-icon-right" target="_blank">
+
+        <i class="icon {{ site.icon }}"></i>
+        {{ site.name }}
         <i class="icon ion-chevron-right icon-accessory"></i>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
