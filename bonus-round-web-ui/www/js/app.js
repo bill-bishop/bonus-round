@@ -53,7 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-social': {
           templateUrl: 'templates/tab-social.html',
-          controller: 'HomeCtrl'
+          controller: 'SocialCtrl'
         }
       }
     })
