@@ -12,7 +12,8 @@
 					"img": "pacman.png"
 				},
 				{
-					"name": "Galaga"
+					"name": "Galaga",
+					"img": "galaga.png"
 				}
 			]
 		}
