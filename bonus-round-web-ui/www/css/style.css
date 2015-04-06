@@ -1,11 +1,16 @@
 /* Empty. Add your own CSS if you like */
 ion-view {
-	background-image: url('../img/arcade.jpg');
+	background-image: url('../img/onett_night.png');
 /*	padding-top: 5%;
 */}
 
 ion-content {
 	padding: 10px;
+}
+
+.scroll {
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .games-list .game {
