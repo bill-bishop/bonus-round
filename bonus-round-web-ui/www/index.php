@@ -24,7 +24,7 @@
     <!-- Constants, inject this with PHP  -->
 
       angular.module('starter')
-        .constant('BASE_URL', '');
+        .constant('BASE_URL', "<?php echo rtrim($_SERVER['REQUEST_URI'], "/"); ?>");
     </script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
