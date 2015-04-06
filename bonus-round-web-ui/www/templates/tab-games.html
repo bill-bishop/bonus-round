@@ -10,7 +10,7 @@
 		<div class="item item-divider" ng-bind="section.type"></div>
 
 		<a class="item game" ng-class="{ 'item-thumbnail-left': game.img }" ng-repeat="game in section.gamesList">
-			<img ng-if="game.img" ng-attr-src="{{ baseUrl }}/img/games/{{ game.img }}" />
+			<img ng-if="game.img" ng-attr-src="img/games/{{ game.img }}" />
 			<span ng-bind="game.name"></span>
 		</a>
   	</div>

@@ -20,12 +20,6 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-    <script>
-    <!-- Constants, inject this with PHP  -->
-
-      angular.module('starter')
-        .constant('BASE_URL', "<?php echo rtrim($_SERVER['REQUEST_URI'], "/"); ?>");
-    </script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
   </head>

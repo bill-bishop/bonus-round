@@ -1,11 +1,9 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope, BASE_URL) {
-	$scope.baseUrl = BASE_URL;
+.controller('HomeCtrl', function($scope) {
 })
 
-.controller('GamesCtrl', function($scope, Games, BASE_URL) {
-	$scope.baseUrl = BASE_URL;
+.controller('GamesCtrl', function($scope, Games) {
 	Games.getGames().then(function (games) {
 		$scope.games = games;
 	});
